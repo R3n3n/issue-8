@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SSO_Gateway.Controllers
 {
-    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         public IActionResult Index()
